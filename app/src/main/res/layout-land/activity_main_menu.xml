@@ -1,0 +1,304 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wiltech.novamaxapp.MainMenuActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#26a349"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgLogoMainMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_logo_main_menu"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/lblChooseOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="@string/lbl_choose_option"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblUserNameMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="@string/lbl_user_name_main"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#fff200"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#26a349"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <ImageButton
+                android:id="@+id/btnSearchBookings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnSearchBookingsClicked"
+                android:src="@drawable/ic_action_search"
+                android:contentDescription="@string/lbl_bookings" />
+
+            <ImageButton
+                android:id="@+id/btnStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnStaffClicked"
+                android:src="@drawable/ic_action_staff"
+                android:contentDescription="@string/lbl_staf_list" />
+
+            <ImageButton
+                android:id="@+id/btnSevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnServicesClicked"
+                android:src="@drawable/ic_action_services"
+                android:contentDescription="@string/lbl_staff_see" />
+
+            <ImageButton
+                android:id="@+id/btnProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnProductsClicked"
+                android:src="@drawable/ic_action_av_web"
+                android:contentDescription="@string/lbl_see_products" />
+
+            <ImageButton
+                android:id="@+id/btnEntertain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnEntertainClicked"
+                android:src="@drawable/ic_action_entertain"
+                android:contentDescription="@string/btn_entertain" />
+
+            <ImageButton
+                android:id="@+id/btnAboutNovaMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnAboutNovaMaxClicked"
+                android:src="@drawable/ic_action_about_us"
+                android:contentDescription="@string/btn_about_nova" />
+
+            <ImageButton
+                android:id="@+id/btnShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnShoppingClicked"
+                android:src="@drawable/ic_action_action_shopping_cart"
+                android:contentDescription="@string/btn_shopping" />
+
+            <ImageButton
+                android:id="@+id/btnMyAppointments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnMyAppointmentsClicked"
+                android:src="@drawable/ic_action_appointment"
+                android:contentDescription="@string/btn_my_appointments" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#26a349"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/lblBookings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_bookings_look"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/lblStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_staff_desc"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:text="@string/lbl_services_desc"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_products_desc"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblEntertain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_enter"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblAboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_about_us_see"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_horizontal"
+                android:paddingLeft="15dp"
+                android:text="@string/lbl_buy"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblMyBookings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_my_b"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#dddddd">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/lbl_title"
+                android:id="@+id/lblTitle"
+                android:textColor="#2c3539"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/lbl_sub_sub_til"
+                android:id="@+id/lblSubSubTitle"
+                android:layout_gravity="right"
+                android:textColor="#2c3539"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="5dp"
+            android:background="#fff200"
+            android:paddingTop="20dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#26a349">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/lbl_company_name"
+                android:id="@+id/lblCompanyName"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_addrress"
+                android:id="@+id/lblCompanyAddress"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

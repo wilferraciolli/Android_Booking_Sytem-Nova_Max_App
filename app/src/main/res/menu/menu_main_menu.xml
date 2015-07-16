@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wiltech.novamaxapp.MainMenuActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sign_out"
+        android:icon="@drawable/ic_action_user_add"
+        app:showAsAction="always"
+        android:title="Sign Out"
+        />
+    <item
+        android:id="@+id/action_close_down"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_cancel"
+        android:title="Close App"/>
+
+    <item android:id="@+id/action_directions"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_directions"
+        android:title="Find Us"/>
+</menu>

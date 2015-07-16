@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="#26a349"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnProductTwo"
+                android:src="@drawable/ic_launcher"
+                android:layout_weight="1"
+                android:onClick="btnProductTwoClicked" />
+
+            <TextView
+                android:id="@+id/lblNovaMaxProductTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Nova Max Products"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#fff200"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Anti Volume"
+                android:id="@+id/lblProductThree"
+                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="33dp"
+                android:textColor="#2c3539"
+                android:layout_above="@+id/lblProductThreeDesc"
+                android:layout_alignEnd="@+id/lblPriceThree" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="£140 free P&amp;P"
+                android:id="@+id/lblPriceThree"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="33dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="The Anti-Volume treatment is a light, smooth formula which absorbs quickly leaving a silky film around the hair shaft. The treatment recovers keratin to the dry and damaged hair protecting the shafts that transform soft and silky. With this process it is giving a deeper treatment, enhancing the straightening effect, giving the hair shafts more durability. All this without having to blowdry the hair, making the process faster."
+                android:id="@+id/lblProductThreeDesc"
+                android:padding="10dp"
+                android:layout_above="@+id/lblPriceThree"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="34dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/anti_vols" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

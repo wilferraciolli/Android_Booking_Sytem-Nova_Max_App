@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.wiltech.novamaxapp.shopping.ShoppingActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#26a349"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/lblProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Pick Your Products"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPay"
+            android:src="@drawable/ic_action_action_credit_card"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:onClick="btnPayClicked" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/lblFullKit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="71dp"
+        android:text="Full Kit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2c3539"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lblDescPOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lblFullKit"
+        android:layout_marginTop="18dp"
+        android:text="A mix of all the products offed by the salon. The Straightner, The Anti Volume and a Manual with images and description."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/lblPriceFullKit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lblDescPOne"
+        android:text="£160 Free P&amp;P"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/lblAntiVolumeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Anti Volume"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2c3539"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lblDescTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblAntiVolumeName"
+        android:layout_marginTop="25dp"
+        android:text="The  Anti-Volume treatment is a light smooth formula which absorbs quiclky leaving a silky film around."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lblAntiPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblDescTwo"
+        android:layout_below="@+id/lblDescTwo"
+        android:layout_marginTop="26dp"
+        android:text="£140 Free P&amp;P"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/lblPThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblAntiPrice"
+        android:layout_marginTop="25dp"
+        android:text="Sample"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2c3539"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblPThree"
+        android:layout_marginTop="19dp"
+        android:text="Sample of anti Volume and straightener."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lblPThrePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="£40 Free P&amp;P"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingRight="10dp" />
+
+    <CheckBox
+        android:id="@+id/cBoxPOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblDescPOne"
+        android:layout_alignEnd="@+id/lblDescPOne"
+        android:checked="false" />
+
+    <CheckBox
+        android:id="@+id/cBoxPTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblDescTwo"
+        android:layout_alignEnd="@+id/lblDescTwo"
+        android:checked="false" />
+
+    <CheckBox
+        android:id="@+id/cBoxPThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/lblPThree"
+        android:checked="false" />
+</RelativeLayout>

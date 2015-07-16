@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="#26a349"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnProductOne"
+                android:src="@drawable/ic_launcher"
+                android:layout_weight="1"
+                android:onClick="btnProductOneClicked" />
+
+            <TextView
+                android:id="@+id/lblNovaMaxProductOne"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Nova Max Products"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#fff200"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Full Kit"
+                android:id="@+id/lblProductThree"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_toStartOf="@+id/lblPriceThree"
+                android:layout_marginBottom="62dp"
+                android:textColor="#2c3539" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="£160 free P&amp;P"
+                android:id="@+id/lblPriceThree"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="33dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/kit"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1x Anti-Residue Shampoo 1000ml (Up to 50 applications) No 01: The Anti-Residue formula is PH balanced, withdrawing the residues that accumulate to leave even the opaque and dull threads without damage to the hair, preparing them to receive the anti-volume treatment.  1x Anti-Volume Treatment 1000ml* (Up to 14 applications) No 02: The Anti-Volume treatment is a light, smooth formula which absorbs quickly "
+                android:id="@+id/lblProductThreeDesc"
+                android:layout_below="@+id/lblProductThree"
+                android:layout_alignParentStart="true"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

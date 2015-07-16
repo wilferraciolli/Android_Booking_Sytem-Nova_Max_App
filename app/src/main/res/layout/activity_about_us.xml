@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wiltech.novamaxapp.AboutUsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lytHeader"
+        android:background="#26a349"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher"
+            android:layout_weight="1"
+            android:contentDescription="@string/img_logo_find_us" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lbl_about_us"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#26a349"
+        android:paddingTop="5dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFindUs"
+            android:src="@drawable/ic_action_place"
+            android:layout_weight="1"
+            android:contentDescription="@string/lbl_find_us"
+            android:onClick="btnFindUsClicked" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCallUs"
+            android:src="@drawable/ic_action_call"
+            android:layout_weight="1"
+            android:contentDescription="@string/lbl_call_us"
+            android:onClick="btnCallUsClicked" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEmailUs"
+            android:src="@drawable/ic_action_new_email"
+            android:layout_weight="1"
+            android:contentDescription="@string/lbl_email_us"
+            android:onClick="btnEmailUsClicked" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:src="@drawable/ic_action_user_add"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_register_about_us"
+            android:onClick="btnRegisterClicked" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnShop"
+            android:src="@drawable/ic_action_play_over_video"
+            android:layout_weight="1"
+            android:contentDescription="@string/lbl_shop"
+            android:onClick="btnShopClicked" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#26a349"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/lbl_find"
+            android:id="@+id/lblFindUs"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/lbl_call"
+            android:id="@+id/lblCallUs"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/lbl_ask"
+            android:id="@+id/lblQuestion"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/lbl_register_here"
+            android:id="@+id/lblRegister"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Video"
+            android:id="@+id/lblShop"
+            android:layout_weight="1.5"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#fff200">
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lbl_what_we_do"
+            android:id="@+id/textView2"
+            android:textColor="#2c3539"
+            android:maxLines="10"
+            android:nestedScrollingEnabled="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_desc"
+            android:id="@+id/textView3"
+            android:scrollbars="vertical"
+            android:maxLines="10"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lbl_more_about_us"
+            android:id="@+id/textView4"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="#2c3539" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_one"
+            android:id="@+id/textView5"
+            android:paddingLeft="30dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_two"
+            android:id="@+id/textView6"
+            android:paddingLeft="30dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_three"
+            android:id="@+id/textView7"
+            android:paddingLeft="30dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_four"
+            android:id="@+id/textView8"
+            android:paddingLeft="30dp"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#fff200"></LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#26a349">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_company_name"
+            android:id="@+id/textView9"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/lbl_addrress"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:paddingTop="3dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

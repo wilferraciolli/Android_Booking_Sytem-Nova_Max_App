@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <item name="green" type="color">#26a349</item>
+    <item name="greenOpacity" type="color">#2226a349</item>
+
+</resources>
